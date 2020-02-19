@@ -2,11 +2,19 @@ package control;
 
 import control.ConnectionFactory;
 import model.Login;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.Statement;
+import java.sql.ResultSet;
 
 public class LoginDAO {
 
     private Connection conection;
+    private PreparedStatement stmt;
+    private Statement st;
+    private ResultSet rs;
+    
+    
     
     public LoginDAO() {
         this.conection = new ConnectionFactory().getConnection();

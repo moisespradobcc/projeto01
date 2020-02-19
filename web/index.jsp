@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>S01</title>
+        <title>S01 - Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "bootstrap/css/bootstrap.min.css"/>
@@ -24,14 +24,14 @@
     <body id="bd">
         <div id="lg" class="card">
             <div class="card-body" >
-                <form>
+                <form action="index.jsp" method="post">
                     <div class="form-group">
                         <label>Usuário</label>
-                        <input type="text" class="form-control" placeholder="Informe seu usuário">
+                        <input type="text" class="form-control" placeholder="Informe seu usuário" name="usuario">
                     </div>
                     <div class="form-group">
                         <label>Senha</label>
-                        <input type="password" class="form-control" placeholder="Informe sua senha">
+                        <input type="password" class="form-control" placeholder="Informe sua senha" name="senha">
                     </div>
                     <button type="submit" class="btn btn-primary">Entrar</button>
                 </form>
